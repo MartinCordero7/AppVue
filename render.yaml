@@ -1,9 +1,5 @@
 services:
-  - type: web
+  - type: static_site
     name: vue-plos-api
-    env: node
     buildCommand: npm install && npm run build
-    startCommand: npm run preview
-    staticSite:
-      buildCommand: npm install && npm run build
-      publishPath: dist
+    publishPath: dist
